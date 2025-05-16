@@ -1,0 +1,2 @@
+A class should have only one reason to change , meaning it should only have one responsiblity.
+

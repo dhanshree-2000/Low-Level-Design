@@ -1,0 +1,2 @@
+Item: Laptop, Quantity: 2, Price: 1500
+Item: Laptop, Quantity: 2, Price: 1500
