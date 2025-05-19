@@ -14,7 +14,7 @@ Tight coupling makes the system rigid and hard to extend.
 
 Diagram (DIP Violation)
 Diagram
-![ISP Violation](https://github.com/dhanshree-2000/Low-Level-Design/blob/main/SOILD%20Principle/I-%20Interface%20Segregation%20Principle/ISP.png)
+![ISP Violation](https://github.com/dhanshree-2000/Low-Level-Design/blob/main/SOILD%20Principle/D-%20Dependency%20Inversion%20Principle/DIP_bad.png)
 
 
 
@@ -41,7 +41,7 @@ Concrete implementations (EmailService, SMSService) depend on the same abstracti
 
 Diagram (DIP Compliance)
 Diagram
-![ISP Violation](https://github.com/dhanshree-2000/Low-Level-Design/blob/main/SOILD%20Principle/I-%20Interface%20Segregation%20Principle/ISP.png)
+![ISP Violation](https://github.com/dhanshree-2000/Low-Level-Design/blob/main/SOILD%20Principle/D-%20Dependency%20Inversion%20Principle/DIP_good.png)
 
 
 
