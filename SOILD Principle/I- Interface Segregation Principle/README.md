@@ -8,23 +8,8 @@ A SimplePrinter (which only prints) must still implement scan() and copy() (eith
 
 Clients can accidentally call unsupported methods, leading to runtime failures.
 
-Diagram: ISP Violation
-┌───────────────────┐
-│     Machine       │ (Interface)
-├───────────────────┤
-│ + print()         │
-│ + scan()          │  ← Forces all printers to implement  
-│ + copy()          │    unnecessary methods.
-└─────────┬─────────┘
-          │
-          ▼
-┌───────────────────┐       ┌───────────────────────┐
-│  SimplePrinter    │       │ MultiFunctionMachine  │
-├───────────────────┤       ├───────────────────────┤
-│ + print()         │       │ + print()             │
-│ + scan() → Error! │       │ + scan()              │
-│ + copy() → Error! │       │ + copy()              │
-└───────────────────┘       └───────────────────────┘
+#Diagram: ISP Violation
+![ISP Violation](https://github.com/your-username/your-repo/blob/main/docs/isp-diagram.png?raw=true)
 ❌ Problem:
 
 SimplePrinter is forced to support scan() and copy(), even though it doesn’t need them.
