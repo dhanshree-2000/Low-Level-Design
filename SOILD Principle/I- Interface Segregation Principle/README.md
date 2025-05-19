@@ -9,7 +9,7 @@ A SimplePrinter (which only prints) must still implement scan() and copy() (eith
 Clients can accidentally call unsupported methods, leading to runtime failures.
 
 #Diagram: ISP Violation
-![ISP Violation](https://github.com/your-username/your-repo/blob/main/docs/isp-diagram.png?raw=true)
+![ISP Violation](https://github.com/dhanshree-2000/Low-Level-Design/blob/main/SOILD%20Principle/I-%20Interface%20Segregation%20Principle/Without_ISP.png)
 ❌ Problem:
 
 SimplePrinter is forced to support scan() and copy(), even though it doesn’t need them.
@@ -33,20 +33,7 @@ MultiFunctionMachine can implement all three interfaces.
 No unnecessary method implementations.
 
 Diagram: ISP Compliance
-┌───────────────┐       ┌───────────────┐       ┌───────────────┐
-│   IPrinter    │       │   IScanner    │       │   ICopier     │
-├───────────────┤       ├───────────────┤       ├───────────────┤
-│ + print()     │       │ + scan()      │       │ + copy()      │
-└───────┬───────┘       └───────┬───────┘       └───────┬───────┘
-        │                       │                       │
-        ▼                       ▼                       ▼
-┌───────────────┐       ┌───────────────────────┐
-│ SimplePrinter │       │ MultiFunctionMachine  │
-├───────────────┤       ├───────────────────────┤
-│ + print()     │       │ + print()             │
-└───────────────┘       │ + scan()              │
-                        │ + copy()              │
-                        └───────────────────────┘
+![ISP Violation](https://github.com/dhanshree-2000/Low-Level-Design/blob/main/SOILD%20Principle/I-%20Interface%20Segregation%20Principle/ISP.png)
 ✅ Improvements:
 
 No Forced Implementations → SimplePrinter only does printing.
