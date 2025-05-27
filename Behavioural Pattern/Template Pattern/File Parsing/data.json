@@ -1,0 +1,17 @@
+[
+    {
+        "Name": "Alice",
+        "Age": 30,
+        "Country": "USA"
+    },
+    {
+        "Name": "Bob",
+        "Age": 25,
+        "Country": "Canada"
+    },
+    {
+        "Name": "Charlie",
+        "Age": 28,
+        "Country": "UK"
+    }
+]
